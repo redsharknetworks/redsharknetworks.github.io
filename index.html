@@ -1,16 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Redshark</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Red Shark Networks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --bg-main: #0b1220;
+            --bg-section: #101a30;
+            --red: #e11d48;
+            --text-main: #e5e7eb;
+            --text-muted: #9ca3af;
+            --border-soft: rgba(255,255,255,.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", system-ui, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(180deg, #0b1220, #070c18);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* ---------- Global ---------- */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            border-left: 5px solid var(--red);
+            padding-left: 15px;
+        }
+
+        p {
+            color: var(--text-muted);
+        }
+
+        /* ---------- Header ---------- */
+        header {
+            text-align: center;
+            padding: 90px 20px;
+            background:
+                radial-gradient(circle at top, rgba(225,29,72,.15), transparent),
+                linear-gradient(180deg, #0b1220, #0b1220);
+        }
+
+        .logo {
+            width: 140px;
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+        }
+
+        header .tagline {
+            margin-top: 12px;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        /* ---------- Sections ---------- */
+        section {
+            border-top: 1px solid var(--border-soft);
+        }
+
+        .card {
+            background: var(--bg-section);
+            border-radius: 16px;
+            padding: 35px;
+            border: 1px solid var(--border-soft);
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-soft);
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        li::before {
+            content: "▸ ";
+            color: var(--red);
+        }
+
+        /* ---------- Leadership ---------- */
+        .profile {
+            margin-top: 20px;
+        }
+
+        .profile h3 {
+            font-size: 1.3rem;
+        }
+
+        .profile span {
+            color: var(--red);
+            font-size: 0.95rem;
+        }
+
+        .contact {
+            margin-top: 10px;
+            color: var(--text-muted);
+        }
+
+        /* ---------- Footer ---------- */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid var(--border-soft);
+            background: #070c18;
+            color: var(--text-muted);
+        }
+
+        footer strong {
+            color: var(--text-main);
+        }
+
+        /* ---------- Responsive ---------- */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            .container {
+                padding: 60px 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-  <section class="hero">
-    <h1>Welcome to Redshark.my</h1>
-    <a href="#contact" class="btn">Get Started</a>
-  </section>
+<!-- ================= HEADER ================= -->
+<header>
+    <img src="assets/logo.png" alt="Red Shark Networks Logo" class="logo">
+
+    <h1>RED SHARK NETWORKS</h1>
+    <div class="tagline">
+        Cybersecurity | Infrastructure | Digital Resilience
+    </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section>
+    <div class="container">
+        <h2>About Red Shark Networks</h2>
+
+        <div class="card">
+            <p>
+                Red Shark Networks is a technology-driven company specializing in
+                cybersecurity solutions, IT infrastructure, and digital resilience services.
+                We focus on delivering practical and enterprise-grade implementations
+                for critical environments.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section>
+    <div class="container">
+        <h2>Core Services</h2>
+
+        <div class="card">
+            <ul>
+                <li>Cybersecurity Implementation & Support</li>
+                <li>Network & Infrastructure Security</li>
+                <li>Incident Response & Security Monitoring</li>
+                <li>IT Systems & Operational Support</li>
+                <li>Security Advisory & Technical Consulting</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section>
+    <div class="container">
+        <h2>Industry Experience</h2>
+
+        <div class="card">
+            <p>
+                Experience across local and international banks, oil & gas companies,
+                universities, and government agencies.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= LEADERSHIP ================= -->
+<section>
+    <div class="container">
+        <h2>Leadership & Expertise</h2>
+
+        <div class="card profile">
+            <h3>Mazlan Muhamad</h3>
+            <span>Tech Evangelist</span>
+
+            <div class="contact">
+                📧 mazlan@redshark.my
+            </div>
+
+            <p style="margin-top:15px;">
+                With more than 20 years of experience in cybersecurity implementation
+                and support, Mazlan has delivered solutions across mission-critical
+                environments.
+            </p>
+
+            <p style="margin-top:15px;">
+                <strong>Education & Certification:</strong><br>
+                • Bachelor of Computer Science, Universiti Putra Malaysia (UPM)<br>
+                • GIAC Certified Incident Handler (GCIH), SANS Institute
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= STRENGTH ================= -->
+<section>
+    <div class="container">
+        <h2>Our Strength</h2>
+
+        <div class="card">
+            <p>
+                Standing strong together with an experienced and resilient team of developers.
+            </p>
+
+            <div class="contact">
+                📧 devnet@redshark.my
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= APPROACH ================= -->
+<section>
+    <div class="container">
+        <h2>Our Approach</h2>
+
+        <div class="card">
+            <p>
+                We believe cybersecurity should be practical, scalable, and aligned
+                with business objectives. Our team works closely with clients to
+                deliver sustainable and effective security outcomes.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <strong>Red Shark Networks</strong><br>
+    Cybersecurity | Infrastructure | Digital Resilience
+</footer>
 
 </body>
 </html>
