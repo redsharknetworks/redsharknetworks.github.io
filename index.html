@@ -133,6 +133,19 @@
             color: var(--text-muted);
         }
 
+        .bottom-banner {
+            max-width: 500px;
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0,0,0,.4);
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+
+        .bottom-banner:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 35px rgba(225,29,72,.35);
+        }
+
         /* ---------- Footer ---------- */
         footer {
             text-align: center;
@@ -288,7 +301,21 @@
         </div>
     </div>
 </section>
+    
+<!-- ================= SUNDAY RING BANNER ================= -->
+<section>
+    <div class="container" style="text-align:center;">
 
+        <a href="https://sunday-ring.redshark.my" target="_blank">
+            <img src="assets/sunday-ring-banner.jpg" 
+                 alt="Sunday Ring" 
+                 class="bottom-banner">
+        </a>
+
+    </div>
+</section>
+
+    
 <!-- ================= FOOTER ================= -->
 <footer>
     <strong>Red Shark Networks</strong><br>
