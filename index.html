@@ -171,16 +171,18 @@
         }
 
         .sunday-link {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            letter-spacing: 0.3px;
-            transition: color 0.25s ease;
+            color: var(--text-main);   /* brighter for visibility */
+            font-size: 1.1rem;         /* bigger text */
+            font-weight: 600;          /* bold */
+            letter-spacing: 0.4px;
+            transition: color 0.25s ease, transform 0.2s ease;
+            display: inline-block;
         }
 
-.sunday-link:hover {
-    color: var(--red);
-}
-
+        .sunday-link:hover {
+            color: var(--red);
+            transform: translateY(-2px); /* subtle lift */
+        }
         
     </style>
 </head>
